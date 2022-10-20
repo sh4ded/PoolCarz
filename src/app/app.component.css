@@ -1,0 +1,20 @@
+nav {
+	height: 50px;
+	background-color: bisque;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: inherit;
+}
+
+
+.title {
+	color: yellowgreen;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	
+}

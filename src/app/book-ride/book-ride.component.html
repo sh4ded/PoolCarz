@@ -1,0 +1,28 @@
+<div>
+    <div>Book a ride</div>
+    <div>
+        <p>
+            Pool Carz is an online application which enables users to share rides with others. You can either book a ride or offer a ride. Did we mention that this App is advertisement free? To add on top of that its free of cost ! So what are you waiting for? Check out the rides available and start PCing!!
+        </p>
+        <button (click)="isShow = !isShow">Show All Rides</button>
+        <div *ngIf="isShow">
+            <button (click) = "onChange('fromOffice')">To Office</button>
+            <button (click) = "onChange('toOffice')">From Office</button>
+            <button (click) = "onChange('others')">Others</button>
+            <table>
+                <tr>
+                    <th>From Office</th>
+                    <th>To Office</th>
+                    <th>Seats Left</th>
+                </tr>
+                <tr *ngFor="let ride of rides | rideFilter : option" (click)="selectRide(ride.id)" appMouseHover>
+                    <td>{{ride.pickUp}}</td>
+                    <td>{{ride.destination}}</td>
+                    <td>{{ride.seatsLeft}}</td>
+                </tr>
+            </table>
+        </div>
+        <app-ride-details [setRide]="selectedRide" (registerClick)="setBook($event)"></app-ride-details>
+        <button>Offer a Ride</button>
+    </div>
+</div>

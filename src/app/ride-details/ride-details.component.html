@@ -1,0 +1,23 @@
+<div *ngIf="ride.length > 0">
+    <div>Ride Details</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Car</th>
+        <th>Seats Left</th>
+        <th>Pick-up Location</th>
+        <th>Drop Location</th>
+    </tr>
+    <tr>
+        <td>{{ride[0].offerId}}</td>
+        <td>{{ride[0].name}}</td>
+        <td>{{ride[0].car}}</td>
+        <td>{{ride[0].seatsLeft}}</td>
+        <td>{{ride[0].pickUp}}</td>
+        <td>{{ride[0].destination}}</td>
+    </tr>
+</table>
+<div *ngIf="isBooked">Booking Done! Your booking id : {{bookingId}}</div>
+<button (click)="Book();register()" appButtonClick>{{bookButtonMsg}}</button>
+</div>

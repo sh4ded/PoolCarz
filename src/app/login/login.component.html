@@ -1,0 +1,35 @@
+
+
+<div >
+	<div >
+		<div >
+			<div >Login</div>
+			<div >
+				<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+					<div >
+						<label for="name"  style="text-align:left">User Name</label>
+						<div >
+							<input type="text" name="userName" [(ngModel)]="login.userName" >
+							<div>{{login.userName}}</div>
+						</div>
+					</div>
+					<div>
+						<label for="password"  style="text-align:left">Password</label>
+						<div >
+							<input type="password" name="password" [(ngModel)]="login.password" >
+						</div>
+					</div>
+
+					<br />
+
+					<div >
+						<span ></span>
+						<div >
+							<button type="submit">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div> 

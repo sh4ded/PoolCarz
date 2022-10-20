@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "offerId": "qwerty",
+        "name": "Fasttrack",
+        "car": "Innova",
+        "seatsLeft": 3,
+        "pickUp": "Vanrose Junction",
+        "destination": "Office"
+    },
+    {
+        "id": 2,
+        "offerId": "kwerty",
+        "name": "Fasttrack",
+        "car": "Innova",
+        "seatsLeft": 2,
+        "pickUp": "PTP",
+        "destination": "Office"
+    },
+    {
+        "id": 3,
+        "offerId": "twerty",
+        "name": "Fasttrack",
+        "car": "Innova",
+        "seatsLeft": 7,
+        "pickUp": "Office",
+        "destination": "East-Fort"
+    },
+    {
+        "id": 4,
+        "offerId": "pwerty",
+        "name": "Fasttrack",
+        "car": "Innova",
+        "seatsLeft": 5,
+        "pickUp": "Office",
+        "destination": "Central Mail"
+    }
+]
